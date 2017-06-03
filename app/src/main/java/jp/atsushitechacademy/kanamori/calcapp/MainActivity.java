@@ -13,7 +13,7 @@ import static jp.atsushitechacademy.kanamori.calcapp.R.id.editText2;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     EditText mEditText, nEditText;
-    int numpass;
+    double numpass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String text1 = mEditText.getText().toString();
         String text2 = nEditText.getText().toString();
 
-        int num1 = Integer.parseInt(text1);
-        int num2 = Integer.parseInt(text2);
+        double num1 = Double.parseDouble(text1);
+        double num2 = Double.parseDouble(text2);
 
         if (v.getId() == R.id.button1) {
             numpass = (num1 + num2);
